@@ -1,0 +1,39 @@
+{
+  "name": "statuspage-node",
+  "version": "0.1.0",
+  "description": "A simple node package wrapper for statuspage.io script.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "statuspage",
+    "statuspageio"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arthur-feral/statuspage-node.git"
+  },
+  "author": "Arthur Féral <arthur.feral@iadvize.com>",
+  "license": "ISC",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "sinon": "^1.17.0",
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
+    ]
+  }
+}
