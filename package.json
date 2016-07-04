@@ -1,6 +1,6 @@
 {
   "name": "statuspage-node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple node package wrapper for statuspage.io script.",
   "main": "index.js",
   "scripts": {
