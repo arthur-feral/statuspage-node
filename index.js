@@ -7,7 +7,7 @@ const superagent = require('superagent');
 module.exports = (properties) => {
   const BASE_URL = 'https://{id}.statuspage.io/api/{apiVersion}/{report}.{format}';
 
-  if (_.isUndefined(properties)) {
+  if (_.isUndefined(properties) || _.isNull(properties)) {
     throw new Error('Your statuspage ID is required.');
   }
 
