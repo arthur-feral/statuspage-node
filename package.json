@@ -4,7 +4,7 @@
   "description": "A simple node package wrapper for statuspage.io script.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-register -r tests/bootstrap.test.js $(find tests -name '*.test.js')"
   },
   "keywords": [
     "statuspage",
@@ -17,11 +17,15 @@
   "author": "Arthur Féral <arthur.feral@iadvize.com>",
   "license": "ISC",
   "dependencies": {
-
+    "superagent": "1.8.2",
+    "when": "3.7.7",
+    "lodash": "^4.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "sinon": "^1.17.0",
+    "babel-register": "^6.9.0",
+    "mocha": "^2.5.3"
   },
   "browserify": {
     "transform": [
